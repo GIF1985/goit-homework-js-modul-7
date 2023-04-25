@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Image gallery</title>
+    <!-- Подключаем стили basicLightbox -->
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css
+"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
-    <p><a href="index.html">Go back</a></p>
 
-    <!-- Add gallery items to this list -->
-    <ul class="gallery"></ul>
-
+    <ul class="gallery">
+      <!-- элементы галереи -->
+      <!-- <li class="gallery__item">
+        <a class="gallery__link" href="${original}">
+          <img class="gallery__image" src="${preview}" data-source="${original}" alt="${description}">
+        </a>
+      </li> -->
+    </ul>
+    <!-- Подключаем скрипт basicLightbox -->
+    <script src="
+        https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
     <script src="js/01-gallery.js" type="module"></script>
   </body>
 </html>

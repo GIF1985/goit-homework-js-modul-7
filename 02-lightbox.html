@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SimpleLightbox library</title>
+    <!-- Подключаем стили библиотеки -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.1/simple-lightbox.min.css"
+    />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <!-- Add gallery items to this list -->
-    <ul class="gallery"></ul>
-
+    <ul class="gallery">
+      <!-- элементы галереи -->
+      <!-- <li class="gallery__item">
+              <a class="gallery__link" href="${original}">
+                <   img class="gallery__image" src="${preview}" alt="${description}" />
+                  <  div class="gallery__caption">${description}</>
+              </a>
+            </li> -->
+    </ul>
+    <!-- Подключаем скрипт библиотеки -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.1/simple-lightbox.min.js"></script>
     <script src="js/02-lightbox.js" type="module"></script>
   </body>
 </html>
